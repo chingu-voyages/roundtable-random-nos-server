@@ -1,10 +1,10 @@
 const express = require('express')
-const { getRandomdata } = require('../controllers/getRandomdata')
+const { getRandomValues } = require('../controllers/getRandomValues')
 
 
 const router = express.Router();
 
-router.route('/getRandomdata')
-    .get(getRandomdata)
+router.route('/getRandomValues')
+    .get(getRandomValues)
 
 module.exports = router
